@@ -15,3 +15,4 @@
 //= require h5bp
 //= require turbolinks
 //= require mix-panel
+//= require vendor/angular
