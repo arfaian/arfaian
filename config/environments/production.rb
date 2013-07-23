@@ -65,7 +65,16 @@ Arfaian::Application.configure do
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   #config.assets.paths << "#{Rails.root}/app/assets/html"
-  #config.assets.precompile += %w( index.html.erb )
+  config.assets.precompile += [
+    Proc.new { |path| 
+      unless File.basename(path) =~ /^_/
+        puts path
+        File.extname(path).in?(%w{js css}.map{|x| "."+x})
+      else
+        false
+      end
+    }
+  ]
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
