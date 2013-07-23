@@ -19,5 +19,16 @@ module Arfaian
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.assets.precompile += [
+      Proc.new { |path| 
+        unless File.basename(path) =~ /^_/
+          puts path
+          File.extname(path).in?(%w{js css}.map{|x| "."+x})
+        else
+          false
+        end
+      }
+    ]
+
   end
 end
