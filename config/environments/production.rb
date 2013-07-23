@@ -23,7 +23,7 @@ Arfaian::Application.configure do
   config.serve_static_assets = false
 
   config.assets.enabled = true
-  config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = true
 
   # Compress JavaScripts and CSS.
   config.assets.compress = true
