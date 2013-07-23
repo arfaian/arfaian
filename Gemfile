@@ -14,7 +14,7 @@ group :assets do
   gem 'uglifier', '>= 1.3.0'
   gem 'asset_sync'
   gem 'sprockets-rails', :require => 'sprockets/railtie'
-  gem 'compass-rails', github: "milgner/compass-rails", ref: "1749c06f15dc4b058427e7969810457213647fb8" 
+  gem 'compass-rails', github: "milgner/compass-rails", branch: 'rails4'
   gem 'compass-h5bp'
 end
 
