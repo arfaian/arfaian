@@ -16,3 +16,4 @@
 //= require turbolinks
 //= require mix-panel
 //= require vendor/angular
+//= require vendor/three
