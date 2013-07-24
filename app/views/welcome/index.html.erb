@@ -537,7 +537,7 @@
 
       var startX = -3000;
 
-      loader.load("<%= javascript_path("vendor/models/animated/parrot.js") %>", function( geometry ) {
+      loader.load("<%= asset_path("vendor/models/animated/parrot.js") %>", function( geometry ) {
 
         morphColorsToFaceColors( geometry );
         addMorph( geometry, 250, 500, startX -500, 500, 700 );
@@ -547,14 +547,14 @@
 
       } );
 
-      loader.load("<%= javascript_path("vendor/models/animated/flamingo.js") %>", function( geometry ) {
+      loader.load("<%= asset_path("vendor/models/animated/flamingo.js") %>", function( geometry ) {
 
         morphColorsToFaceColors( geometry );
         addMorph( geometry, 500, 1000, startX - Math.random() * 500, 350, 40 );
 
       } );
 
-      loader.load("<%= javascript_path("vendor/models/animated/stork.js") %>", function( geometry ) {
+      loader.load("<%= asset_path("vendor/models/animated/stork.js") %>", function( geometry ) {
 
         morphColorsToFaceColors( geometry );
         addMorph( geometry, 350, 1000, startX - Math.random() * 500, 350, 340 );
