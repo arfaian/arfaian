@@ -12,7 +12,8 @@
 //-----------------------------------------
 // Vendor imports
 //-----------------------------------------
-// @import 'compass/css3';
+@import 'compass/css3';
+@import "compass/css3/transition";
 @import 'h5bp';
 
 //-----------------------------------------
@@ -27,3 +28,5 @@
 //-----------------------------------------
 @import 'layout';
 @import 'media_queries';
+@import 'grid_animation';
+@import 'grid_mouseover';

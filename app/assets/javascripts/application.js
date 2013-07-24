@@ -17,3 +17,24 @@
 //= require mix-panel
 //= require vendor/angular
 //= require vendor/three
+
+//= require vendor/controls/TrackballControls.js
+
+//= require vendor/shaders/BleachBypassShader.js
+//= require vendor/shaders/ConvolutionShader.js
+//= require vendor/shaders/CopyShader.js
+//= require vendor/shaders/HorizontalTiltShiftShader.js
+//= require vendor/shaders/LuminosityShader.js
+//= require vendor/shaders/NormalMapShader.js
+//= require vendor/shaders/VerticalTiltShiftShader.js
+
+//= require vendor/postprocessing/EffectComposer.js
+//= require vendor/postprocessing/RenderPass.js
+//= require vendor/postprocessing/BloomPass.js
+//= require vendor/postprocessing/ShaderPass.js
+//= require vendor/postprocessing/MaskPass.js
+//= require vendor/postprocessing/SavePass.js
+
+//= require vendor/ShaderTerrain.js
+
+//= require vendor/Detector.js

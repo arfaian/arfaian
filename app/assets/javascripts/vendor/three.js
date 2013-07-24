@@ -10774,7 +10774,7 @@ THREE.JSONLoader.prototype.loadAjaxJSON = function ( context, url, callback, tex
 
 				if ( xhr.responseText ) {
 
-					var json = JSON.parse( xhr.responseText );
+					var json = JSON.parse( xhr.responseText.replace(';', '') );
 					var result = context.parse( json, texturePath );
 					callback( result.geometry, result.materials );
 

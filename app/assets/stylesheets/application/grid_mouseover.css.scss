@@ -1,0 +1,9 @@
+#grid li {
+  @include transition-property(opacity);
+  @include transition-duration(0.3s);
+  @include transition-timing-function(ease-in);
+}
+ 
+#grid li:hover {
+  opacity: 0.5;
+}
