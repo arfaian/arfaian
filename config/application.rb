@@ -23,7 +23,7 @@ module Arfaian
       Proc.new { |path| 
         unless File.basename(path) =~ /^_/
           puts path
-          File.extname(path).in?(%w{js css}.map{|x| "."+x})
+          File.extname(path).in?(%w{json js css}.map{|x| "."+x})
         else
           false
         end
