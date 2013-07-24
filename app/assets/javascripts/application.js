@@ -35,6 +35,10 @@
 //= require vendor/postprocessing/MaskPass.js
 //= require vendor/postprocessing/SavePass.js
 
+//= require vendor/models/animated/flamingo.js
+//= require vendor/models/animated/stork.js
+//= require vendor/models/animated/parrot.js
+
 //= require vendor/ShaderTerrain.js
 
 //= require vendor/Detector.js
