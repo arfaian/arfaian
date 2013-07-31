@@ -1,0 +1,14 @@
+@mixin size($attr, $px_values, $important: false) {
+  $px_list: (); $rem_list: ();
+  @each $value in $px_values {
+    $px_list: append($px_list, $value + px);
+    $rem_list: append($rem_list, ($value / 10) + rem);
+  }
+  @if $important {
+    #{$attr}: $px_list !important;
+    #{$attr}: $rem_list !important;
+  } @else {
+    #{$attr}: $px_list;
+    #{$attr}: $rem_list;
+  }
+}

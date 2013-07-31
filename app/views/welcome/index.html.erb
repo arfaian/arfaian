@@ -31,10 +31,24 @@
 
     #loading {
       width: 100%;
-      margin: 2em auto;
       text-align: center;
       position: absolute;
-      top: 25em
+      @include size(top, 240);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      display: table;
+    }
+
+    #loading div {
+      font-size: 60px;
+      font-weight: 100;
+      color: #fff;
+      opacity: 0.7;
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
     }
 
     #oldie a {
@@ -52,7 +66,6 @@
       width: 200px;
       margin: 25px;
       background-color: #fff;
-      opacity: 0.3;
     }
   </style>
 <% end %>
@@ -68,7 +81,11 @@
 
 <div id="container"></div>
 
-<div id="loading">Loading...</div>
+<div id="loading">
+  <div>
+    Loading...
+  </div>
+</div>
 
 <% content_for :inline_script do %>
   <script id="fragmentShaderNoise" type="x-shader/x-fragment">
